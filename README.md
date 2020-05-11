@@ -138,8 +138,6 @@
 
 ### HTML 全局属性(global attribute)有哪些
 
-参考资料：[MDN: html global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)或者[W3C HTML global-attributes](http://www.w3.org/TR/html-markup/global-attributes.html#common.attrs.core)
-
 - `accesskey`:设置快捷键，提供快速访问元素如<a href="#" accesskey="a">aaa</a>在 windows 下的 firefox 中按`alt + shift + a`可激活元素
 - `class`:为元素设置类标识，多个类名用空格分开，CSS 和 javascript 可通过 class 属性获取元素
 - `contenteditable`: 指定元素内容是否可编辑
@@ -297,8 +295,6 @@ Content-Type: text/html; charset=iso-8859-1
 
 ### 如何进行网站性能优化
 
-[雅虎 Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html)：
-
 - content 方面
 
   1. 减少 HTTP 请求：合并文件、CSS 精灵、inline Image
@@ -356,8 +352,6 @@ Content-Type: text/html; charset=iso-8859-1
 - end-user web browser preferences are respected
 
 ### HTTP 状态码及其含义
-
-参考[RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 
 - 1XX：信息状态码
   - **100 Continue**：客户端应当继续发送请求。这个临时相应是用来通知客户端它的部分请求已经被服务器接收，且仍未被拒绝。客户端应当继续发送请求的剩余部分，或者如果请求已经完成，忽略这个响应。服务器必须在请求完成后向客户端发送一个最终响应
@@ -638,7 +632,6 @@ x:default {
 
 ### PNG,GIF,JPG 的区别及如何选
 
-参考资料： [选择正确的图片格式](http://www.yuiblog.com/blog/2008/11/04/imageopt-2/)
 **GIF**:
 
 1. 8 位像素，256 色
@@ -991,8 +984,6 @@ z 轴上的默认层叠顺序如下（从下到上）：
 
 ### 如何竖直居中一个元素
 
-参考资料：[6 Methods For Vertical Centering With CSS](http://www.vanseodesign.com/css/vertical-centering/)。 [盘点 8 种 CSS 实现垂直居中](http://blog.csdn.net/freshlover/article/details/11579669)
-
 - 需要居中元素为**单行文本**，为包含文本的元素设置大于`font-size`的`line-height`：
 
 ```
@@ -1167,8 +1158,6 @@ z 轴上的默认层叠顺序如下（从下到上）：
 3. [Function 构造函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 4. [ES6:arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/arrow_functions)
 
-重要参考资料：[MDN:Functions_and_function_scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope)
-
 ### 应用程序存储和离线 web 应用
 
 HTML5 新增应用程序缓存，允许 web 应用将应用程序自身保存到用户浏览器中，用户离线状态也能访问。 1.为 html 元素设置 manifest 属性:`<html manifest="myapp.appcache">`，其中后缀名只是一个约定，真正识别方式是通过`text/cache-manifest`作为 MIME 类型。所以需要配置服务器保证设置正确
@@ -1232,9 +1221,6 @@ document.cookie = 'name=aaa; path=/; domain=domain; secure';
 //读取cookie，访问document.cookie返回键值对组成的字符串，
 //不同键值对之间用'; '分隔。通过解析获得需要的值
 ```
-
-[cookieUtil.js](https://github.com/qiu-deqing/google/blob/master/module/js/cookieUtil.js)：自己写的 cookie 操作工具
-
 ### javascript 有哪些方法定义对象
 
 1. 对象字面量： `var obj = {};`
