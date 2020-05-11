@@ -85,10 +85,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# FE-interview
-
-个人收集的前端知识点、面试题和答案，参考答案仅代表个人观点，方便复习，目录如下，通过文档内搜索目录可快速定位章节
-
 ## $HTML， HTTP，web 综合问题
 
 ### 常见排序算法的时间复杂度,空间复杂度
@@ -242,8 +238,6 @@ css 命名的语义化是指：为 html 标签添加有意义的 class，id 补�
 
 ### HTTP request 报文结构是怎样的
 
-[rfc2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html)中进行了定义：
-
 1. 首行是**Request-Line**包括：**请求方法**，**请求 URI**，**协议版本**，**CRLF**
 2. 首行之后是若干行**请求头**，包括**general-header**，**request-header**或者**entity-header**，每个一行以 CRLF 结束
 3. 请求头和消息实体之间有一个**CRLF 分隔**
@@ -269,7 +263,6 @@ name=qiu&age=25
 
 ### HTTP response 报文结构是怎样的
 
-[rfc2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html)中进行了定义：
 
 1. 首行是状态行包括：**HTTP 版本，状态码，状态描述**，后面跟一个 CRLF
 2. 首行之后是**若干行响应头**，包括：**通用头部，响应头部，实体头部**
